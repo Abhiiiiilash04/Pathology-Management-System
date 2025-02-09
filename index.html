@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathology Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background">
+    <div class="container">
+      <h1>Pathology Management System</h1>
+      <div class="menu">
+        <h2>Select Data Entry</h2>
+        <ul>
+          <li><a href="#" id="pathologistLink">Pathologist</a></li>
+          <li><a href="#" id="patientLink">Patient</a></li>
+          <li><a href="#" id="testLink">Test</a></li>
+          <li><a href="#" id="doctorLink">Doctor</a></li>
+        </ul>
+      </div>
+
+      <div id="pathologistForm" class="hidden">
+        <h2>Add Pathologist</h2>
+        <form>
+          <input type="text" id="pathologistName" placeholder="Name" required>
+          <input type="text" id="type" placeholder="Type" required>
+          <input type="tel" id="contactNo" placeholder="Contact Number" required>
+          <button type="submit">Add Pathologist</button>
+        </form>
+      </div>
+
+      <div id="patientForm" class="hidden">
+        <h2>Add Patient</h2>
+        <form>
+          <input type="text" id="patientName" placeholder="Name" required>
+          <input type="text" id="gender" placeholder="Gender" required>
+          <input type="number" id="age" placeholder="Age" required>
+          <input type="tel" id="mobileNumber" placeholder="Mobile Number" required>
+          <input type="text" id="address" placeholder="Address" required>
+          <button type="submit">Add Patient</button>
+        </form>
+      </div>
+
+      <div id="testForm" class="hidden">
+        <h2>Add Test</h2>
+        <form>
+          <input type="text" id="testName" placeholder="Test Name" required>
+          <input type="number" id="price" placeholder="Price" required>
+          <input type="date" id="date" required>
+          
+          <select id="pathologistId" required>
+            <option value="1">Pathologistid 1001</option>
+            <option value="2">Pathologistid 1002</option>
+            <option value="3">Pathologistid 1003</option>
+            <!-- Add more options as needed -->
+          </select>
+      
+          <select id="patientId" required>
+            <option value="1">Patientid 100</option>
+            <option value="2">Patientid 102</option>
+            <option value="3">Patientid 301</option>
+            <!-- Add more options as needed -->
+          </select>
+      
+          <input type="text" id="testResult" placeholder="Test Result" required>
+          <button type="submit">Add Test</button>
+        </form>
+      </div>
+      
+
+      <div id="doctorForm" class="hidden">
+        <h2>Add Doctor</h2>
+        <form>
+          <input type="text" id="docName" placeholder="Doctor Name" required>
+          <input type="text" id="specialist" placeholder="Specialist" required>
+          <input type="text" id="docId" placeholder="Doctor ID" required>
+          <input type="tel" id="docContactNumber" placeholder="Contact Number" required>
+          <button type="submit">Add Doctor</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
